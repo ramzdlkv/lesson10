@@ -1,18 +1,16 @@
-import ProductCard from "./ProductCard"
-import {phones} from "../data"
-function ProductList(){
-    
-return (
-    <div className="product_List">
-        <h1>Товары</h1>
-        <div className="products_cards">
-            {phones.map((phone)=>{
-              return  <ProductCard phone={phone}/>
-            })}
-           
-        </div>
+import ProductCard from "./ProductCard";
+import { phonesData } from "../data";
+function ProductList({addToCart}) {
+  return (
+    <div className="product_list">
+      <h1>Товары</h1>
+      <div className="product_cards">
+        {phonesData.map((phone) => {
+          return <ProductCard phone={phone} addToCart={addToCart}  />;
+        })}
+      </div>
     </div>
-)
+  );
 }
 
-export default ProductList
+export default ProductList;

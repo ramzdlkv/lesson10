@@ -1,70 +1,87 @@
-export const phones = [
+export const phonesData = [
   {
     id: 1,
+    title: "Apple iPhone 15 Pro",
     brand: "Apple",
-    model: "iPhone 15 Pro Max",
-    price: 129990,
-    oldPrice: 139990,
+    price: 119990,
+    oldPrice: 129990,
+    image: "./images/1.jpg",
     rating: 4.9,
-    reviewsCount: 1248,
-    color: "Titanium Blue",
-    storage: "256GB",
-    ram: "8GB",
-    screen: "6.7\" Super Retina XDR",
-    camera: "48MP + 12MP + 12MP",
-    battery: "4441 mAh",
+    reviewsCount: 1245,
     inStock: true,
-    isNew: true,
-    discount: 7,
-    image: "/images/1.webp",
-    images: [
-      "https://example.com/images/iphone15promax-1.jpg",
-      "https://example.com/images/iphone15promax-2.jpg"
-    ],
-    tags: ["flagship", "5G", "premium"]
+    badge: "Хит",
+    specs: {
+      memory: "256 ГБ",
+      color: "Титановый синий",
+      screen: "6.1\""
+    }
   },
   {
     id: 2,
+    title: "Samsung Galaxy S24 Ultra",
     brand: "Samsung",
-    model: "Galaxy S24 Ultra",
-    price: 119990,
-    oldPrice: 129990,
+    price: 109990,
+    oldPrice: null,
+    image: "./images/2.jpg",
     rating: 4.8,
-    reviewsCount: 986,
-    color: "Titanium Gray",
-    storage: "512GB",
-    ram: "12GB",
-    screen: "6.8\" Dynamic AMOLED 2X",
-    camera: "200MP + 50MP + 12MP + 10MP",
-    battery: "5000 mAh",
+    reviewsCount: 890,
     inStock: true,
-    isNew: true,
-    discount: 8,
-    image: "/images/2.webp",
-    images: [
-      "https://example.com/images/galaxys24ultra-1.jpg",
-      "https://example.com/images/galaxys24ultra-2.jpg"
-    ],
-    tags: ["flagship", "5G", "S Pen"]
+    badge: "Новинка",
+    specs: {
+      memory: "512 ГБ",
+      color: "Серый титан",
+      screen: "6.8\""
+    }
   },
   {
     id: 3,
+    title: "Xiaomi Redmi Note 13 Pro",
     brand: "Xiaomi",
-    model: "14 Pro",
-    price: 89990,
-    oldPrice: 99990,
-    rating: 4.7,
-    reviewsCount: 542,
-    color: "Black",
-    storage: "256GB",
-    ram: "12GB",
-    screen: "6.73\" AMOLED",
-    camera: "50MP + 50MP + 50MP",
-    battery: "4880 mAh",
+    price: 24990,
+    oldPrice: 29990,
+    image: "./images/3.jpg",
+    rating: 4.6,
+    reviewsCount: 3412,
     inStock: true,
-    isNew: false,
-    discount: 10,
-    image: "/images/3.webp",
-    images: ["https://example.com/images/xiaomi14pro-1.jpg"],
-    tags: ["flagship", "5G", "Leica"]
-  }]
+    badge: "Скидка",
+    specs: {
+      memory: "256 ГБ",
+      color: "Черный",
+      screen: "6.67\""
+    }
+  },
+  {
+    id: 4,
+    title: "Google Pixel 8",
+    brand: "Google",
+    price: 59990,
+    oldPrice: 69990,
+    image: "https://placehold.co/400x500/png?text=Pixel+8",
+    rating: 4.7,
+    reviewsCount: 512,
+    inStock: false, // Товар закончился
+    badge: null,
+    specs: {
+      memory: "128 ГБ",
+      color: "Обсидиан",
+      screen: "6.2\""
+    }
+  },
+  {
+    id: 5,
+    title: "HONOR Magic6 Pro",
+    brand: "HONOR",
+    price: 89990,
+    oldPrice: null,
+    image: "https://placehold.co/400x500/png?text=HONOR+Magic6",
+    rating: 4.5,
+    reviewsCount: 128,
+    inStock: true,
+    badge: null,
+    specs: {
+      memory: "512 ГБ",
+      color: "Зеленый",
+      screen: "6.78\""
+    }
+  }
+];

@@ -1,24 +1,28 @@
 import { Link } from "react-router-dom";
 
-function ProductCard({ phone }) {
-    console.log(phone);
+function ProductCard({ phone , addToCart}) {
+ 
+  
 
-    let title = "Iphone 18 PRO"
-    return (<div className="card">
-        <Link to ={`/product/${phone.id}`}>
-            <div className="card-top">
-                <img width={"300px"} src={phone.image} />
-            </div>
-            <div className="card-bottom">
-                <h1>{phone.brand}</h1>
-                <p>{phone.price}</p>
-            </div>
+  let title = "iphone 18 PRO";
+  return (
+    <>
+    <Link to={`/product/${phone.id}`}>
+      <div className="card">
+        <div className="card_top">
+          <img width={"300px"} src={phone.image} />
+        </div>
+        <div className="card_bottom">
+          <h1>{phone.brand}</h1>
 
-        </Link>
-
-        
-    </div>
-    )
+          <p>{phone.price}</p>
+        </div>
+       
+      </div>
+    </Link>
+    <button onClick={()=> addToCart(phone)}>Добавить в корз</button>
+    </>
+  );
 }
 
-export default ProductCard
+export default ProductCard;
